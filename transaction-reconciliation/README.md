@@ -6,7 +6,13 @@ A local Python application that compares internal transaction exports with payme
 
 ## Quick start
 
-On the prepared Windows workspace, double-click **`start.cmd`**. The project environment is already installed. If the app is already running, open **http://127.0.0.1:8501** instead.
+Start from the repository root and enter the application directory:
+
+```sh
+cd transaction-reconciliation
+```
+
+Install Python 3.12 (the tested version), create an environment and install the dependencies before the first run. The repository does not include an installed environment or a runtime database.
 
 For a fresh checkout:
 
@@ -23,6 +29,8 @@ python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 .venv/bin/python -m streamlit run app.py
 ```
+
+Open **http://127.0.0.1:8501** on the computer running the app. On Windows, double-clicking **`start.cmd`** also sets up the environment, installs dependencies when needed and starts the app. This address is local; the repository does not provide a hosted demo.
 
 `requirements.lock.txt` additionally pins the full resolved dependency set from the verified environment. Use `pip install -r requirements.lock.txt` when reproducing that exact set.
 
@@ -107,6 +115,8 @@ The English build passes **52 unittest tests**, including Streamlit interaction 
 ```powershell
 .\.venv\Scripts\python.exe -m unittest tests.test_validation tests.test_matching tests.test_integration tests.test_reporting
 ```
+
+The repository's [Tests workflow](https://github.com/ye11122233/ledger-match/actions/workflows/tests.yml) runs the full suite on Windows and Linux for pushes and pull requests to `main`. Its current result is shown on the repository homepage. The Streamlit theme, upload limit and local-server settings are in `.streamlit/config.toml`.
 
 Regenerate demo files or add a larger input pair:
 

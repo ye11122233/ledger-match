@@ -1,0 +1,21 @@
+# Local environments, generated data and temporary reports
+.venv/
+__pycache__/
+*.py[cod]
+data/
+artifacts/
+*.log
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-*
+*.zip
+
+# Machine-specific files and credentials
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example
+secrets.toml
+.streamlit/secrets.toml
