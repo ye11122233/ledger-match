@@ -1,0 +1,17 @@
+{
+  "timestamp_utc": "2026-10-20T23:42:42.134212+00:00",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "logical_keys": 10000,
+  "total_source_records": 19800,
+  "end_to_end_seconds": 0.3678,
+  "duplicate_import_seconds": 0.0009,
+  "counts": {
+    "amount_mismatch": 100,
+    "matched": 9700,
+    "missing_internal": 100,
+    "missing_platform": 100
+  },
+  "expected_verified": true,
+  "scope": "Local synthetic CSV validation, pandas matching and SQLite persistence; excludes browser rendering. One run, not a production capacity guarantee."
+}

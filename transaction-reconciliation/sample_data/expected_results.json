@@ -1,0 +1,29 @@
+{
+  "demo": {
+    "internal_rows": 15,
+    "platform_rows": 13,
+    "internal_invalid_rows": 6,
+    "platform_invalid_rows": 0,
+    "counts": {
+      "matched": 4,
+      "amount_mismatch": 3,
+      "missing_platform": 2,
+      "missing_internal": 2,
+      "blocked": 4
+    },
+    "eligible_keys": 11,
+    "match_rate": 0.36363636363636365,
+    "GBP_net_difference_minor": 0,
+    "GBP_absolute_difference_minor": 200,
+    "EUR_net_difference_minor": -100,
+    "EUR_absolute_difference_minor": 100
+  },
+  "corrected": {
+    "rows_per_source": 15,
+    "counts": {
+      "matched": 15
+    },
+    "match_rate": 1.0
+  },
+  "notes": "Expected outcomes are specified by the fixture author, not computed by the matching engine."
+}
